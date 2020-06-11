@@ -20,6 +20,7 @@
       property="og:description"
       content="pure js slideshow"
     />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="slide.css" />
     <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,11 +29,33 @@
     <main>
       <section class="slide">
         <div class="slide__container">
-          <div class="slide__container--left"></div>
-          <div class="slide__container--center"></div>
-          <div class="slide__container--right"></div>
+          <div class="slide__container--left">
+            <img
+              src="https://i.picsum.photos/id/0/1200/628.jpg"
+              alt=""
+              id="slide__container--left--image"
+            />
+          </div>
+          <div class="slide__container--center">
+            <img
+              src="https://i.picsum.photos/id/0/1200/628.jpg"
+              alt=""
+              id="slide__container--center--image"
+            />
+          </div>
+          <div class="slide__container--right">
+            <img
+              src="https://i.picsum.photos/id/0/1200/628.jpg"
+              alt=""
+              id="slide__container--right--image"
+            />
+          </div>
         </div>
         <div class="slide__counter"></div>
+        <div class="slide__triggers">
+          <div class="slide__triggers--left"></div>
+          <div class="slide__triggers--right"></div>
+        </div>
       </section>
     </main>
   </body>
