@@ -13,6 +13,33 @@ main .slide__container {
   width: 100%;
 }
 
+main .slide__container--left {
+  width: 25%;
+  /* or whatever is required */
+  text-align: ce;
+  /* ensures the image is always in the h-middle */
+  overflow: hidden;
+  /* hide the cropped portion */
+  border: 1px solid red;
+}
+
+main .slide__container--left--image {
+  position: relative;
+  /* allows repositioning */
+  left: 100%;
+  /* move the whole width of the image to the right */
+  margin-left: -200%;
+  /* magic! */
+}
+
+main .slide__container--center {
+  border: 1px solid red;
+}
+
+main .slide__container--right {
+  border: 1px solid red;
+}
+
 main .slide__counter {
   position: relative;
 }
