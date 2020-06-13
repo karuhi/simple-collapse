@@ -24,25 +24,25 @@
         gutter: 0, // 画像同士の間の余白
         center: true, // メイン画像をセンタリング
       },
-      480: {
+      400: {
         items: 1,
-        edgePadding: 96, // ちらっと見える幅
+        edgePadding: 133, // ちらっと見える幅
         gutter: 8, // 画像同士の間の余白
         center: true, // メイン画像をセンタリング
       },
-      896: {
+      768: {
         items: 1,
-        edgePadding: 180, // ちらっと見える幅
+        edgePadding: 256, // ちらっと見える幅
         gutter: 12, // 画像同士の間の余白
         center: true, // メイン画像をセンタリング
       },
-      1024: {
+      1000: {
         items: 1,
-        edgePadding: 300, // ちらっと見える幅
+        edgePadding: 333, // ちらっと見える幅
         gutter: 16, // 画像同士の間の余白
         center: true, // メイン画像をセンタリング
       },
-      1440: {
+      1200: {
         items: 1,
         edgePadding: 400, // ちらっと見える幅
         gutter: 16, // 画像同士の間の余白
