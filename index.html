@@ -21,30 +21,27 @@
       content="pure js slideshow"
     />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="plugins/tiny-slider-v2.9.2/tiny-slider.css" />
+    <!--[if (lt IE 9)
+      ]><script src="plugins/tiny-slider-v2.9.2/tiny-slider.helper.ie8.js"></script
+    ><![endif]-->
+    <script src="plugins/tiny-slider-v2.9.2/tiny-slider.js"></script>
     <link rel="stylesheet" href="slide.css" />
-    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <main>
-      <section class="slide">
-        <div class="slide__container">
-          <div class="slide__container--left">
-            <img src="" alt="" class="slide__container--left--image" />
-          </div>
-          <div class="slide__container--center">
-            <img src="" alt="" class="slide__container--center--image" />
-          </div>
-          <div class="slide__container--right">
-            <img src="" alt="" class="slide__container--right--image" />
-          </div>
-        </div>
-        <div class="slide__counter"></div>
-        <div class="slide__triggers">
-          <div class="slide__triggers--left"></div>
-          <div class="slide__triggers--right"></div>
+      <section class="slider-view">
+        <div class="slider-view__slider">
+          <div><img src="images/carousel-image-0.png" alt="" /></div>
+          <div><img src="images/carousel-image-1.png" alt="" /></div>
+          <div><img src="images/carousel-image-2.png" alt="" /></div>
+          <div><img src="images/carousel-image-3.png" alt="" /></div>
+          <div><img src="images/carousel-image-4.png" alt="" /></div>
+          <div><img src="images/carousel-image-5.png" alt="" /></div>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,56 +1,57 @@
-main {
-  .slide {
-    // 変数
-    $imageHeight: 628px; // 画像の縦幅サイズ
-    // 変数ここまで
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
-    &__container {
-      display: flex;
-      flex-wrap: nowrap;
-      width: 100%;
-      &--left {
-        width: 25%; /* or whatever is required */
-        text-align: ce; /* ensures the image is always in the h-middle */
-        overflow: hidden; /* hide the cropped portion */
-        border: 1px solid red;
-        &--image {
-          position: relative; /* allows repositioning */
-          left: 100%; /* move the whole width of the image to the right */
-          margin-left: -200%; /* magic! */
-        }
-      }
-      &--center {
-        border: 1px solid red;
-      }
-      &--right {
-        border: 1px solid red;
-      }
+.slider-view {
+  & .tns-outer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  & .tns-inner {
+    position: relative;
+  }
+  & .tns-nav {
+    text-align: center;
+    & > [aria-controls] {
+      width: 9px;
+      height: 9px;
+      margin: 0 5px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: #dddddd;
     }
-    &__counter {
-      position: relative;
-      & span {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.4);
-        &.active {
-          background: white;
-        }
-      }
-      @for $i from 0 through 4 {
-        & span:nth-child(#{$i + 1}) {
-          position: absolute;
-          top: 0;
-          left: calc(50vw + #{20 * $i}px);
-          //transform: translateX(-50%);
-          top: -20px;
-        }
-      }
+    & > .tns-nav-active {
+      background: #999999;
     }
-    &__triggers {
+  }
+  & .tns-controls {
+    & > button {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      opacity: 0.9;
+      background: blue;
+      color: #ffffff;
+      line-height: 30px;
+      text-align: center;
+      font-weight: bold;
+      &[data-controls="prev"] {
+        left: 20%;
+        &:hover {
+          background: red;
+        }
+      }
+      &[data-controls="next"] {
+        right: 20%;
+        &:hover {
+          background: red;
+        }
+      }
     }
   }
 }

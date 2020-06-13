@@ -1,93 +1,63 @@
-main .slide {
-  width: 100vw;
-  height: 100%;
-  overflow: hidden;
-}
-
-main .slide__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+.slider-view .tns-outer {
+  position: relative;
   width: 100%;
+  margin: 0 auto;
 }
 
-main .slide__container--left {
-  width: 25%;
-  /* or whatever is required */
-  text-align: ce;
-  /* ensures the image is always in the h-middle */
-  overflow: hidden;
-  /* hide the cropped portion */
-  border: 1px solid red;
-}
-
-main .slide__container--left--image {
-  position: relative;
-  /* allows repositioning */
-  left: 100%;
-  /* move the whole width of the image to the right */
-  margin-left: -200%;
-  /* magic! */
-}
-
-main .slide__container--center {
-  border: 1px solid red;
-}
-
-main .slide__container--right {
-  border: 1px solid red;
-}
-
-main .slide__counter {
+.slider-view .tns-inner {
   position: relative;
 }
 
-main .slide__counter span {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.4);
+.slider-view .tns-nav {
+  text-align: center;
 }
 
-main .slide__counter span.active {
-  background: white;
+.slider-view .tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  margin: 0 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #dddddd;
 }
 
-main .slide__counter span:nth-child(1) {
+.slider-view .tns-nav > .tns-nav-active {
+  background: #999999;
+}
+
+.slider-view .tns-controls > button {
   position: absolute;
-  top: 0;
-  left: calc(50vw + 0px);
-  top: -20px;
+  z-index: 2;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0.9;
+  background: blue;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
 }
 
-main .slide__counter span:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: calc(50vw + 20px);
-  top: -20px;
+.slider-view .tns-controls > button[data-controls="prev"] {
+  left: 20%;
 }
 
-main .slide__counter span:nth-child(3) {
-  position: absolute;
-  top: 0;
-  left: calc(50vw + 40px);
-  top: -20px;
+.slider-view .tns-controls > button[data-controls="prev"]:hover {
+  background: red;
 }
 
-main .slide__counter span:nth-child(4) {
-  position: absolute;
-  top: 0;
-  left: calc(50vw + 60px);
-  top: -20px;
+.slider-view .tns-controls > button[data-controls="next"] {
+  right: 20%;
 }
 
-main .slide__counter span:nth-child(5) {
-  position: absolute;
-  top: 0;
-  left: calc(50vw + 80px);
-  top: -20px;
+.slider-view .tns-controls > button[data-controls="next"]:hover {
+  background: red;
 }
 /*# sourceMappingURL=slide.css.map */

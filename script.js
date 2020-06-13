@@ -1,34 +1,53 @@
-var nowSlideNum = 0;
-var images = [
-  "https://picsum.photos/id/0/1200/628",
-  "https://picsum.photos/id/1/1200/628",
-  "https://picsum.photos/id/2/1200/628",
-  "https://picsum.photos/id/3/1200/628",
-  "https://picsum.photos/id/4/1200/628",
-];
-var slideCounter;
-var imgLeft;
-var imgCenter;
-var imgRight;
-
-window.onload = function () {
-  initialize();
-};
-function initialize() {
-  // 要素を読み込み
-  slideCounter = document.getElementsByClassName("slide__counter");
-  imgLeft = document.getElementsByClassName("slide__container--left--image");
-  imgCenter = document.getElementsByClassName(
-    "slide__container--center--image"
-  );
-  imgRight = document.getElementsByClassName("slide__container--right--image");
-  // 画像を挿入
-  imgLeft[0].src = images[0];
-  imgCenter[0].src = images[1];
-  imgRight[0].src = images[2];
-  // スライドのページネーションを表示
-  for (var i = 0; i < images.length; i++) {
-    var span = document.createElement("span");
-    slideCounter[0].appendChild(span);
-  }
-}
+(function () {
+  tns({
+    container: ".slider-view__slider",
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    // 見た目系
+    items: 1,
+    edgePadding: 0, // ちらっと見える幅
+    gutter: 0, // 画像同士の間の余白
+    center: true, // メイン画像をセンタリング
+    autoHeight: true,
+    controlsText: ["&lt;", "&gt;"],
+    // autoplay
+    autoplay: true,
+    autoplayHoverPause: false,
+    autoplayTimeout: 3500,
+    autoplayButtonOutput: false,
+    navPosition: "bottom",
+    responsive: {
+      0: {
+        items: 1,
+        edgePadding: 0, // ちらっと見える幅
+        gutter: 0, // 画像同士の間の余白
+        center: true, // メイン画像をセンタリング
+      },
+      480: {
+        items: 1,
+        edgePadding: 96, // ちらっと見える幅
+        gutter: 8, // 画像同士の間の余白
+        center: true, // メイン画像をセンタリング
+      },
+      896: {
+        items: 1,
+        edgePadding: 180, // ちらっと見える幅
+        gutter: 12, // 画像同士の間の余白
+        center: true, // メイン画像をセンタリング
+      },
+      1024: {
+        items: 1,
+        edgePadding: 300, // ちらっと見える幅
+        gutter: 16, // 画像同士の間の余白
+        center: true, // メイン画像をセンタリング
+      },
+      1440: {
+        items: 1,
+        edgePadding: 400, // ちらっと見える幅
+        gutter: 16, // 画像同士の間の余白
+        center: true, // メイン画像をセンタリング
+      },
+    },
+  });
+})();
