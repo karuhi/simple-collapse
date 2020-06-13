@@ -19,11 +19,11 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: #dddddd;
+  background: #b6dcf1;
 }
 
 .slider-view .tns-nav > .tns-nav-active {
-  background: #999999;
+  background: #8bc8e9;
 }
 
 .slider-view .tns-controls > button {
@@ -38,7 +38,7 @@
   border-radius: 50%;
   outline: none;
   opacity: 0.9;
-  background: blue;
+  background: #8ac8e9;
   color: #ffffff;
   line-height: 30px;
   text-align: center;
@@ -50,7 +50,7 @@
 }
 
 .slider-view .tns-controls > button[data-controls="prev"]:hover {
-  background: red;
+  background: #60b4e1;
 }
 
 .slider-view .tns-controls > button[data-controls="next"] {
@@ -58,6 +58,6 @@
 }
 
 .slider-view .tns-controls > button[data-controls="next"]:hover {
-  background: red;
+  background: #60b4e1;
 }
 /*# sourceMappingURL=slide.css.map */

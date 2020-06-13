@@ -1,3 +1,4 @@
+$primarybrandcolor: #8ac8e9;
 .slider-view {
   & .tns-outer {
     position: relative;
@@ -16,10 +17,10 @@
       padding: 0;
       border: 0;
       border-radius: 50%;
-      background: #dddddd;
+      background: hsl(201, 68%, 83%); //73%
     }
     & > .tns-nav-active {
-      background: #999999;
+      background: hsl(201, 68%, 73%); //73%;
     }
   }
   & .tns-controls {
@@ -35,21 +36,23 @@
       border-radius: 50%;
       outline: none;
       opacity: 0.9;
-      background: blue;
+      background: $primarybrandcolor;
       color: #ffffff;
       line-height: 30px;
       text-align: center;
       font-weight: bold;
+
+      $primarybrandcolor-hsl-dark: hsl(201, 68%, 63%); //73%
       &[data-controls="prev"] {
         left: 20%;
         &:hover {
-          background: red;
+          background: $primarybrandcolor-hsl-dark;
         }
       }
       &[data-controls="next"] {
         right: 20%;
         &:hover {
-          background: red;
+          background: $primarybrandcolor-hsl-dark;
         }
       }
     }
