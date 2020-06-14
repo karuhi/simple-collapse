@@ -1,0 +1,21 @@
+//	DEFAULT SIZES
+
+$base: 16px;
+
+$xx-small: $base * 0.75; // 			//12
+$x-small: $base * 0.875; // h6		//14
+$small: $base; // h5		//16
+$medium: $base * 1.125; // h4		//18
+$large: $base * 1.625; // h3		//26
+$x-large: $base * 2.125; // h2		//34
+$xx-large: $base * 3; // h1		//48
+$jumbo: $base * 4; // Icon		//56
+
+//	MEDIA QUERIES
+
+$container: "only screen and (max-width: 1220px)";
+$desktop: "only screen and (max-width: 960px)";
+$tablet: "only screen and (max-width: 768px)";
+$mobile: "only screen and (max-width: 600px)";
+$phone: "only screen and (max-width: 480px)";
+$flip-phone: "only screen and (max-width: 320px)";
