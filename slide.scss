@@ -17,10 +17,10 @@ $primarybrandcolor: #8ac8e9;
       padding: 0;
       border: 0;
       border-radius: 50%;
-      background: hsl(201, 68%, 83%); //73%
+      background: lighten($primarybrandcolor, 10%);
     }
     & > .tns-nav-active {
-      background: hsl(201, 68%, 73%); //73%;
+      background: $primarybrandcolor;
     }
   }
   & .tns-controls {
@@ -42,18 +42,25 @@ $primarybrandcolor: #8ac8e9;
       text-align: center;
       font-weight: bold;
 
-      $primarybrandcolor-hsl-dark: hsl(201, 68%, 63%); //73%
       &[data-controls="prev"] {
         left: 20%;
         &:hover {
-          background: $primarybrandcolor-hsl-dark;
+          background: darken($primarybrandcolor, 10%);
         }
       }
       &[data-controls="next"] {
         right: 20%;
         &:hover {
-          background: $primarybrandcolor-hsl-dark;
+          background: darken($primarybrandcolor, 10%);
         }
+      }
+    }
+  }
+  & .tns-item {
+    filter: brightness(50%);
+    &.tns-slide-active {
+      &.active {
+        filter: none;
       }
     }
   }
