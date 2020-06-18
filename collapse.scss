@@ -1,3 +1,4 @@
+$primarybrandcolor: #8ac8e9;
 //	DEFAULT SIZES
 
 $base: 16px;
@@ -19,3 +20,29 @@ $tablet: "only screen and (max-width: 768px)";
 $mobile: "only screen and (max-width: 600px)";
 $phone: "only screen and (max-width: 480px)";
 $flip-phone: "only screen and (max-width: 320px)";
+
+.collapse-container {
+  text-align: center;
+  &__title {
+    font-size: $x-large;
+  }
+  &__collapse {
+    margin: $small;
+    &--title {
+      border: 2px solid;
+      padding: $small;
+      margin-bottom: 4px;
+      padding-left: $small;
+      font-size: $medium;
+    }
+    &--text {
+      display: none;
+      font-size: $small;
+      border: 2px solid;
+      padding: $small;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

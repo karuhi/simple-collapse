@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>pure-slideshow</title>
+    <title>simple-collapse</title>
     <meta charset="utf-8" />
-    <meta name="description" content="pure js slideshow" />
+    <meta name="description" content="simple js collapse" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="pure-slideshow" />
+    <meta name="apple-mobile-web-app-title" content="simple-collapse" />
     <meta name="author" content="karuhi" />
     <meta name="theme-color" content="#fff" />
     <meta name="og:type" property="og:type" content="website" />
-    <meta name="og:title" property="og:title" content="pure-slideshow" />
+    <meta name="og:title" property="og:title" content="simple-collapse" />
     <meta
       name="og:site_name"
       property="og:site_name"
-      content="pure-slideshow"
+      content="simple-collapse"
     />
     <meta
       name="og:description"
       property="og:description"
-      content="pure js slideshow"
+      content="simple js collapse"
     />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="plugins/tiny-slider-v2.9.2/tiny-slider.css" />
-    <!--[if (lt IE 9)
-      ]><script src="plugins/tiny-slider-v2.9.2/tiny-slider.helper.ie8.js"></script
-    ><![endif]-->
-    <script src="plugins/tiny-slider-v2.9.2/tiny-slider.js"></script>
-    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="collapse.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <main>
-      <section class="slider-view">
-        <div class="slider-view__slider">
-          <div><img src="images/carousel-image-0.jpg" alt="" /></div>
-          <div><img src="images/carousel-image-1.jpg" alt="" /></div>
-          <div><img src="images/carousel-image-2.jpg" alt="" /></div>
-          <div><img src="images/carousel-image-3.jpg" alt="" /></div>
-          <div><img src="images/carousel-image-4.jpg" alt="" /></div>
-          <div><img src="images/carousel-image-5.jpg" alt="" /></div>
+      <section class="collapse-container">
+        <div class="collapse-container__title">ご利用について</div>
+        <div class="collapse-container__collapse">
+          <div
+            class="collapse-container__collapse--title"
+            onclick="toggleShowStatus(this)"
+          >
+            Q1. 本当に無料で使えるのでしょうか？
+          </div>
+          <div class="collapse-container__collapse--text">
+            様々ないろいろな様々を使用することで無料を実現しています。様々ないろいろな様々を使用することで無料を実現しています。様々ないろいろな様々を使用することで無料を実現しています。
+            様々ないろいろな様々を使用することで無料を実現しています。様々ないろいろな様々を使用することで無料を実現しています。様々ないろいろな様々を使用することで無料を実現しています。
+            様々ないろいろな様々を使用することで無料を実現しています。様々ないろいろな様々を使用することで無料を実現しています。様々ないろいろな様々を使用することで無料を実現しています。
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,31 @@
+.collapse-container {
+  text-align: center;
+}
+
+.collapse-container__title {
+  font-size: 34px;
+}
+
+.collapse-container__collapse {
+  margin: 16px;
+}
+
+.collapse-container__collapse--title {
+  border: 2px solid;
+  padding: 16px;
+  margin-bottom: 4px;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+.collapse-container__collapse--text {
+  display: none;
+  font-size: 16px;
+  border: 2px solid;
+  padding: 16px;
+}
+
+.collapse-container__collapse--text.active {
+  display: block;
+}
+/*# sourceMappingURL=collapse.css.map */
