@@ -11,11 +11,32 @@
 }
 
 .collapse-container__collapse--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  width: 100%;
   border: 2px solid;
   padding: 16px;
   margin-bottom: 4px;
   padding-left: 16px;
   font-size: 18px;
+}
+
+.collapse-container__collapse--title--text {
+  width: 85%;
+}
+
+.collapse-container__collapse--title--icon {
+  width: 15%;
+}
+
+.collapse-container__collapse--title--icon::before {
+  content: "+";
+}
+
+.collapse-container__collapse--title--icon.active::before {
+  content: "-";
 }
 
 .collapse-container__collapse--text {

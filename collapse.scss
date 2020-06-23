@@ -29,11 +29,26 @@ $flip-phone: "only screen and (max-width: 320px)";
   &__collapse {
     margin: $small;
     &--title {
+      display: flex;
+      vertical-align: middle;
+      width: 100%;
       border: 2px solid;
       padding: $small;
       margin-bottom: 4px;
       padding-left: $small;
       font-size: $medium;
+      &--text {
+        width: 85%;
+      }
+      &--icon {
+        width: 15%;
+        &::before {
+          content: "+";
+        }
+        &.active::before {
+          content: "-";
+        }
+      }
     }
     &--text {
       display: none;
